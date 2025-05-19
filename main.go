@@ -26,6 +26,6 @@ func enableCORS(next http.HandlerFunc) http.HandlerFunc {
 
 func main() {
 	http.HandleFunc("/view", enableCORS(visionHandler))
-	fmt.Println("🔍 Glint API running on http://localhost:8060")
+	fmt.Println("🔍 Glint API running on port 8060")
 	log.Fatal(http.ListenAndServe(":8060", nil))
 }
