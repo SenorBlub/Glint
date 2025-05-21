@@ -30,8 +30,8 @@ jobs:
       - name: Build and push Docker image
         uses: docker/build-push-action@v3
         with:
-          context: ./Glint
-          file: ./Glint/Dockerfile
+          context: ./
+          file: ./Dockerfile
           push: true
           tags: |
             ${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}:latest
