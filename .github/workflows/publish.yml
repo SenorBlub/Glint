@@ -6,7 +6,7 @@ on:
 
 env:
   REGISTRY: thomasverhappen
-  IMAGE_NAME: Glint
+  IMAGE_NAME: glint
 
 jobs:
   build:
